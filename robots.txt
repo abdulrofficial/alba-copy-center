@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abdulrofficial.github.io/alba-copy-center/sitemap.xml

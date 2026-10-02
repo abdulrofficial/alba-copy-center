@@ -1,2127 +1,1140 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ALBA COPY CENTER | Fotokopi, Print & Percetakan</title>
-
-<meta name="description"
-content="ALBA COPY CENTER - Fotokopi, print, scan, jilid, laminating, cetak foto, sablon, cetak buku, cetak Yasin dan berbagai kebutuhan percetakan.">
-
-<style>
-
-/* =========================
-   RESET
-========================= */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f2faff;
-    color:#17202a;
-    line-height:1.6;
-}
-
-/* =========================
-   BATIK BACKGROUND
-========================= */
-
-.batik-bg{
-    background-image:
-    linear-gradient(
-        rgba(235,249,255,.91),
-        rgba(235,249,255,.91)
-    ),
-    url("1790941727614.png");
-
-    background-size:
-        auto,
-        420px;
-
-    background-repeat:
-        repeat,
-        repeat;
-}
-
-/* =========================
-   NAVBAR
-========================= */
-
-nav{
-    position:sticky;
-    top:0;
-    z-index:9999;
-
-    background:rgba(255,255,255,.94);
-    backdrop-filter:blur(15px);
-
-    border-bottom:1px solid #dceefa;
-
-    box-shadow:0 4px 20px rgba(0,100,160,.08);
-}
-
-.nav-container{
-    max-width:1180px;
-    margin:auto;
-
-    padding:13px 20px;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-
-    font-size:20px;
-    font-weight:900;
-    color:#55bde8;
-
-    white-space:nowrap;
-}
-
-.logo img{
-    width:45px;
-    height:45px;
-    object-fit:contain;
-    border-radius:8px;
-}
-
-.nav-links{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:17px;
-}
-
-.nav-links a{
-    text-decoration:none;
-    color:#263746;
-    font-size:14px;
-    font-weight:700;
-}
-
-.nav-links a:hover{
-    color:#42b4e6;
-}
-
-/* =========================
-   HERO
-========================= */
-
-.hero{
-    min-height:650px;
-
-    display:flex;
-    align-items:center;
-
-    background:
-    linear-gradient(
-        135deg,
-        rgba(225,248,255,.95),
-        rgba(245,252,255,.88)
-    ),
-    url("1790941727614.png");
-
-    background-size:cover,420px;
-}
-
-.hero-container{
-    max-width:1180px;
-    width:100%;
-
-    margin:auto;
-    padding:85px 20px;
-
-    display:grid;
-    grid-template-columns:1.15fr .85fr;
-
-    gap:50px;
-    align-items:center;
-}
-
-.badge{
-    display:inline-block;
-
-    padding:8px 15px;
-
-    border-radius:30px;
-
-    background:#d9f3ff;
-    color:#35a9dc;
-
-    font-size:13px;
-    font-weight:bold;
-
-    margin-bottom:20px;
-}
-
-.hero h1{
-    font-size:clamp(40px,7vw,70px);
-    line-height:1.02;
-
-    margin-bottom:20px;
-
-    color:#55bde8;
-
-    letter-spacing:-2px;
-}
-
-.hero p{
-    color:#586b79;
-    font-size:18px;
-    max-width:680px;
-}
-
-.hero-owner{
-    margin-top:15px;
-    font-weight:bold;
-    color:#3b9bc6;
-}
-
-.buttons{
-    margin-top:30px;
-
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-}
-
-.btn{
-    display:inline-block;
-
-    padding:14px 23px;
-
-    border-radius:11px;
-
-    text-decoration:none;
-
-    font-weight:bold;
-
-    transition:.25s;
-
-    border:none;
-
-    cursor:pointer;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-.btn-primary{
-    background:#58bee9;
-    color:#fff;
-
-    box-shadow:0 10px 25px rgba(70,185,230,.25);
-}
-
-.btn-green{
-    background:#25d366;
-    color:#fff;
-}
-
-.btn-light{
-    background:#fff;
-    color:#48add7;
-
-    border:1px solid #ccebf7;
-}
-
-/* =========================
-   HERO CARD
-========================= */
-
-.hero-card{
-    background:rgba(255,255,255,.94);
-
-    padding:35px;
-
-    border-radius:28px;
-
-    border:1px solid #d9eef8;
-
-    box-shadow:0 20px 60px rgba(42,132,174,.14);
-
-    text-align:center;
-}
-
-.hero-logo{
-    width:150px;
-    height:150px;
-
-    object-fit:contain;
-
-    margin:auto auto 15px;
-
-    border-radius:20px;
-}
-
-.hero-card h3{
-    color:#35a9dc;
-
-    font-size:25px;
-
-    margin-bottom:10px;
-}
-
-.hero-card p{
-    font-size:14px;
-}
-
-/* =========================
-   SECTION
-========================= */
-
-section{
-    max-width:1180px;
-
-    margin:auto;
-
-    padding:80px 20px;
-}
-
-.section-title{
-    text-align:center;
-
-    margin-bottom:45px;
-}
-
-.section-title h2{
-    font-size:38px;
-
-    color:#43add8;
-
-    margin-bottom:10px;
-}
-
-.section-title p{
-    color:#71808b;
-}
-
-/* =========================
-   CARDS
-========================= */
-
-.cards{
-    display:grid;
-
-    grid-template-columns:
-    repeat(3,1fr);
-
-    gap:20px;
-}
-
-.card{
-    background:#fff;
-
-    padding:28px;
-
-    border-radius:20px;
-
-    border:1px solid #dceef7;
-
-    box-shadow:
-    0 8px 30px rgba(25,120,160,.06);
-
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-6px);
-
-    box-shadow:
-    0 15px 40px rgba(25,120,160,.12);
-}
-
-.card-icon{
-    font-size:40px;
-
-    margin-bottom:15px;
-}
-
-.card h3{
-    color:#263746;
-
-    margin-bottom:8px;
-}
-
-.card p{
-    color:#71808b;
-
-    font-size:14px;
-}
-
-/* =========================
-   PRICE
-========================= */
-
-.price-table{
-    background:#fff;
-
-    border-radius:20px;
-
-    overflow:hidden;
-
-    box-shadow:
-    0 8px 30px rgba(20,100,140,.07);
-
-    border:1px solid #dceef7;
-}
-
-.price-row{
-    display:grid;
-
-    grid-template-columns:
-    1fr 180px;
-
-    gap:20px;
-
-    padding:17px 22px;
-
-    border-bottom:1px solid #edf5f8;
-}
-
-.price-row:last-child{
-    border-bottom:none;
-}
-
-.price-row strong{
-    color:#40aeda;
-
-    text-align:right;
-}
-
-/* =========================
-   PROMO
-========================= */
-
-.promo{
-    background:
-    linear-gradient(
-        135deg,
-        #50b9e3,
-        #8bdcff
-    );
-
-    color:#fff;
-
-    border-radius:28px;
-
-    padding:50px 30px;
-
-    text-align:center;
-
-    box-shadow:
-    0 15px 40px rgba(55,170,215,.2);
-}
-
-.promo h2{
-    font-size:36px;
-
-    margin-bottom:10px;
-}
-
-.promo p{
-    margin-bottom:25px;
-}
-
-/* =========================
-   FORM
-========================= */
-
-.form-wrapper{
-    max-width:900px;
-
-    margin:auto;
-
-    background:#fff;
-
-    padding:35px;
-
-    border-radius:24px;
-
-    border:1px solid #dceef7;
-
-    box-shadow:
-    0 10px 40px rgba(20,100,140,.08);
-}
-
-.form-grid{
-    display:grid;
-
-    grid-template-columns:
-    1fr 1fr;
-
-    gap:18px;
-}
-
-.form-group{
-    margin-bottom:20px;
-}
-
-.full{
-    grid-column:1 / -1;
-}
-
-label{
-    display:block;
-
-    font-size:14px;
-
-    font-weight:bold;
-
-    margin-bottom:7px;
-}
-
-input,
-textarea,
-select{
-    width:100%;
-
-    padding:13px;
-
-    border:1px solid #d6e6ee;
-
-    border-radius:10px;
-
-    outline:none;
-
-    font-family:inherit;
-
-    font-size:14px;
-
-    background:#fff;
-}
-
-input:focus,
-textarea:focus,
-select:focus{
-    border-color:#50b9e3;
-
-    box-shadow:
-    0 0 0 3px rgba(80,185,227,.12);
-}
-
-textarea{
-    min-height:110px;
-
-    resize:vertical;
-}
-
-/* =========================
-   CHECKBOX
-========================= */
-
-.checkbox-grid{
-    display:grid;
-
-    grid-template-columns:
-    1fr 1fr;
-
-    gap:10px;
-}
-
-.checkbox{
-    display:flex;
-
-    align-items:center;
-
-    gap:8px;
-
-    padding:11px;
-
-    background:#f2faff;
-
-    border:1px solid #e0f1f8;
-
-    border-radius:9px;
-
-    cursor:pointer;
-}
-
-.checkbox input{
-    width:auto;
-}
-
-/* =========================
-   FILE UPLOAD
-========================= */
-
-.file-box{
-    padding:20px;
-
-    background:#f2faff;
-
-    border:2px dashed #8fd5ef;
-
-    border-radius:15px;
-
-    text-align:center;
-}
-
-.file-box input{
-    background:#fff;
-
-    margin-top:10px;
-}
-
-.file-info{
-    margin-top:12px;
-
-    color:#607480;
-
-    font-size:13px;
-
-    text-align:left;
-}
-
-.file-list{
-    margin-top:10px;
-
-    padding-left:18px;
-}
-
-.file-list li{
-    margin-bottom:5px;
-}
-
-/* =========================
-   BUTTON FILE
-========================= */
-
-.share-file{
-    width:100%;
-
-    margin-top:15px;
-
-    padding:14px;
-
-    background:#55bde8;
-
-    color:#fff;
-
-    border:none;
-
-    border-radius:10px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-}
-
-.share-file:hover{
-    background:#38a8d7;
-}
-
-/* =========================
-   SUBMIT
-========================= */
-
-.submit{
-    width:100%;
-
-    border:none;
-
-    padding:16px;
-
-    background:#25d366;
-
-    color:#fff;
-
-    border-radius:11px;
-
-    font-size:16px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-}
-
-.submit:hover{
-    background:#1fbd5b;
-}
-
-/* =========================
-   MAP
-========================= */
-
-.map-box{
-    margin-top:25px;
-
-    background:#fff;
-
-    border-radius:20px;
-
-    padding:25px;
-
-    text-align:center;
-
-    border:1px solid #dceef7;
-}
-
-/* =========================
-   TESTIMONI
-========================= */
-
-.testimonials{
-    display:grid;
-
-    grid-template-columns:
-    repeat(3,1fr);
-
-    gap:20px;
-}
-
-.testimonial{
-    background:#fff;
-
-    padding:25px;
-
-    border-radius:18px;
-
-    border:1px solid #e0edf3;
-}
-
-.stars{
-    color:#ffad00;
-
-    margin-bottom:10px;
-}
-
-.testimonial p{
-    color:#657580;
-
-    font-size:14px;
-}
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact{
-    background:#123044;
-
-    color:#fff;
-
-    border-radius:28px;
-
-    padding:50px 30px;
-
-    text-align:center;
-}
-
-.contact p{
-    color:#c6d9e3;
-
-    margin:10px 0 25px;
-}
-
-.address{
-    margin:20px auto;
-
-    max-width:700px;
-
-    color:#d5e6ee;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-    background:#08151d;
-
-    color:#91a5af;
-
-    text-align:center;
-
-    padding:35px 20px;
-}
-
-footer strong{
-    color:#fff;
-}
-
-/* =========================
-   FLOATING WHATSAPP
-========================= */
-
-.wa-floating{
-    position:fixed;
-
-    right:20px;
-
-    bottom:20px;
-
-    z-index:9999;
-
-    width:60px;
-
-    height:60px;
-
-    border-radius:50%;
-
-    background:#25d366;
-
-    color:#fff;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    font-size:28px;
-
-    text-decoration:none;
-
-    box-shadow:
-    0 8px 25px rgba(0,0,0,.25);
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:800px){
-
-    .nav-container{
-        flex-direction:column;
-
-        gap:10px;
+  <meta charset="UTF-8">
+
+  <!-- SEO UTAMA -->
+  <title>ALBA COPY CENTER | Fotokopi, Print & Percetakan</title>
+
+  <meta name="description"
+        content="ALBA COPY CENTER melayani fotokopi, print, scan, jilid, laminating, cetak foto, undangan, banner, poster, stiker, sablon, ATK dan percetakan. Buka setiap hari pukul 06.00–22.00 WIB.">
+
+  <meta name="keywords"
+        content="ALBA COPY CENTER, fotokopi, print, percetakan, scan, jilid, laminating, cetak foto, cetak undangan, banner, poster, stiker, sablon, ATK">
+
+  <meta name="author" content="Dedi Asari / Acong">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+
+  <!-- RESPONSIVE -->
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <!-- CANONICAL -->
+  <link rel="canonical"
+        href="https://abdulrofficial.github.io/alba-copy-center/">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+        content="ALBA COPY CENTER | Fotokopi, Print & Percetakan">
+  <meta property="og:description"
+        content="Fotokopi, print, scan, jilid, laminating, cetak foto, undangan, banner, poster, stiker, sablon dan ATK.">
+  <meta property="og:url"
+        content="https://abdulrofficial.github.io/alba-copy-center/">
+  <meta property="og:site_name" content="ALBA COPY CENTER">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title"
+        content="ALBA COPY CENTER | Fotokopi & Percetakan">
+  <meta name="twitter:description"
+        content="Melayani fotokopi, print, scan, jilid, laminating dan berbagai kebutuhan percetakan.">
+
+  <!-- DATA BISNIS UNTUK GOOGLE -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ALBA COPY CENTER",
+    "description": "Layanan fotokopi, print, scan, jilid, laminating dan percetakan.",
+    "url": "https://abdulrofficial.github.io/alba-copy-center/",
+    "telephone": "+628128183339",
+    "priceRange": "Rp",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Perum GCC Cluster Lanatana, Jl. Nakula Raya Blok C1 No. 4",
+      "addressCountry": "ID"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "06:00",
+        "closes": "22:00"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    .nav-links{
-        gap:9px;
+    html {
+      scroll-behavior: smooth;
     }
 
-    .nav-links a{
-        font-size:12px;
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background:
+        linear-gradient(
+          rgba(255,255,255,0.92),
+          rgba(255,255,255,0.92)
+        ),
+        url("1790941727614.png");
+      background-size: 350px;
+      color: #222;
     }
 
-    .hero-container{
-        grid-template-columns:1fr;
-
-        text-align:center;
+    header {
+      background: #bfefff;
+      padding: 15px 5%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,.12);
     }
 
-    .hero p{
-        margin:auto;
+    .header-inner {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
     }
 
-    .buttons{
-        justify-content:center;
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
-    .cards,
-    .gallery,
-    .testimonials{
-        grid-template-columns:1fr;
+    .logo img {
+      width: 55px;
+      height: 55px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: white;
     }
 
-    .form-grid{
-        grid-template-columns:1fr;
+    .logo-text {
+      font-size: 20px;
+      font-weight: bold;
+      color: #0879b8;
     }
 
-    .full{
-        grid-column:auto;
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
     }
 
-    .checkbox-grid{
-        grid-template-columns:1fr;
+    nav a {
+      text-decoration: none;
+      color: #075985;
+      font-weight: bold;
+      font-size: 14px;
     }
 
-    .price-row{
-        grid-template-columns:1fr;
-
-        gap:4px;
+    nav a:hover {
+      color: #003c61;
     }
 
-    .price-row strong{
-        text-align:left;
+    section {
+      padding: 60px 5%;
     }
 
-    .hero{
-        min-height:auto;
+    .container {
+      max-width: 1100px;
+      margin: auto;
     }
 
-}
+    .hero {
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+      background:
+        linear-gradient(
+          rgba(190,239,255,.90),
+          rgba(255,255,255,.93)
+        );
+    }
 
-</style>
+    .hero h1 {
+      font-size: clamp(35px, 7vw, 65px);
+      color: #0879b8;
+      margin-bottom: 10px;
+      font-weight: 900;
+    }
+
+    .hero h2 {
+      font-size: clamp(20px, 4vw, 30px);
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 13px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      background: #0879b8;
+      color: white;
+      transition: .3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: .9;
+    }
+
+    .btn-wa {
+      background: #16a34a;
+    }
+
+    .btn-map {
+      background: #2563eb;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #0879b8;
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 25px 15px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+      border: 1px solid #dff5ff;
+      transition: .3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card .icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .service-card h3 {
+      color: #075985;
+      font-size: 18px;
+    }
+
+    .price-box {
+      max-width: 850px;
+      margin: auto;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    }
+
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 16px 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .price-row:last-child {
+      border-bottom: none;
+    }
+
+    .price {
+      color: #0879b8;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .promo {
+      background: #e0f7ff;
+      text-align: center;
+    }
+
+    .promo-box {
+      background: white;
+      padding: 35px;
+      border-radius: 25px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    }
+
+    .promo-box h3 {
+      color: #0879b8;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    form {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .checkbox-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+    }
+
+    .checkbox-item {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+
+    .checkbox-item input {
+      width: auto;
+      margin-right: 7px;
+    }
+
+    .upload-info {
+      font-size: 13px;
+      color: #666;
+      margin-top: 6px;
+    }
+
+    .reviews {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .review {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    }
+
+    .stars {
+      color: #f59e0b;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .contact-box {
+      background: #bfefff;
+      padding: 35px;
+      border-radius: 25px;
+      text-align: center;
+    }
+
+    .contact-box p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #075985;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    .wa-floating {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #16a34a;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.25);
+      z-index: 9999;
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        flex-direction: column;
+      }
+
+      header {
+        position: relative;
+      }
+
+      nav {
+        gap: 8px;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+
+      section {
+        padding: 45px 4%;
+      }
+
+      form {
+        padding: 20px;
+      }
+
+      .price-row {
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
+<header>
+  <div class="header-inner">
 
-<!-- =========================
-     NAVBAR
-========================= -->
+    <div class="logo">
+      <img src="LOGO ALBA.jpg"
+           alt="Logo ALBA COPY CENTER">
+      <div class="logo-text">
+        ALBA COPY CENTER
+      </div>
+    </div>
 
-<nav>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#harga">Harga</a>
+      <a href="#pesan">Pesan</a>
+      <a href="#ulasan">Ulasan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
 
-<div class="nav-container">
-
-<div class="logo">
-
-<img src="LOGO ALBA.jpg"
-alt="Logo ALBA COPY CENTER">
-
-ALBA COPY CENTER
-
-</div>
-
-<div class="nav-links">
-
-<a href="#home">Home</a>
-
-<a href="#layanan">Layanan</a>
-
-<a href="#harga">Harga</a>
-
-<a href="#pesan">Pesan</a>
-
-<a href="#ulasan">Ulasan</a>
-
-<a href="#kontak">Kontak</a>
-
-</div>
-
-</div>
-
-</nav>
-
-
-<!-- =========================
-     HERO
-========================= -->
-
-<header class="hero batik-bg" id="home">
-
-<div class="hero-container">
-
-<div>
-
-<div class="badge">
-🖨️ SOLUSI CETAK & PERCETAKAN
-</div>
-
-<h1>
-ALBA COPY CENTER
-</h1>
-
-<p>
-
-Cepat Melayani, Rapi Hasilnya.
-
-Kami melayani berbagai kebutuhan
-fotokopi, print, scan, jilid,
-laminating, cetak foto,
-sablon dan percetakan.
-
-</p>
-
-<div class="hero-owner">
-
-👤 Pemilik: Dedi Asari / Acong
-
-</div>
-
-<div class="buttons">
-
-<a
-href="#pesan"
-class="btn btn-primary">
-
-📄 Pesan Sekarang
-
-</a>
-
-<a
-href="https://wa.me/628128183339"
-target="_blank"
-class="btn btn-green">
-
-💬 WhatsApp
-
-</a>
-
-<a
-href="https://maps.app.goo.gl/wYgBURe3gChmRh7Q6?g_st=ac"
-target="_blank"
-class="btn btn-light">
-
-📍 Google Maps
-
-</a>
-
-</div>
-
-</div>
-
-
-<div class="hero-card">
-
-<img
-src="LOGO ALBA.jpg"
-alt="Logo ALBA"
-class="hero-logo">
-
-<h3>
-ALBA COPY CENTER
-</h3>
-
-<p>
-Tempat berbagai kebutuhan
-fotokopi, print dan percetakan.
-</p>
-
-<br>
-
-<strong>
-⚡ Cepat • Rapi • Terpercaya
-</strong>
-
-</div>
-
-</div>
-
+  </div>
 </header>
 
+<!-- HOME -->
+<section id="home" class="hero">
 
-<!-- =========================
-     LAYANAN
-========================= -->
+  <div>
 
+    <h1>ALBA COPY CENTER</h1>
+
+    <h2>Fotokopi • Print • Percetakan</h2>
+
+    <p>
+      Melayani berbagai kebutuhan dokumen dan percetakan.
+    </p>
+
+    <p>
+      <strong>Pemilik: Dedi Asari / Acong</strong>
+    </p>
+
+    <p>
+      Buka setiap hari
+      <strong>06.00 – 22.00 WIB</strong>
+    </p>
+
+    <a
+      class="btn btn-wa"
+      href="https://wa.me/628128183339"
+      target="_blank"
+      rel="noopener">
+      💬 Pesan via WhatsApp
+    </a>
+
+    <a
+      class="btn btn-map"
+      href="https://maps.app.goo.gl/wYgBURe3gChmRh7Q6?g_st=ac"
+      target="_blank"
+      rel="noopener">
+      📍 Lihat Lokasi
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- LAYANAN -->
 <section id="layanan">
 
-<div class="section-title">
-
-<h2>Layanan Kami</h2>
-
-<p>
-Berbagai kebutuhan dokumen dan percetakan.
-</p>
-
-</div>
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<div class="card-icon">📄</div>
-
-<h3>Fotokopi</h3>
-
-<p>
-Fotokopi A4 hitam putih,
-bolak-balik dan kebutuhan dokumen.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">🖨️</div>
-
-<h3>Print Dokumen</h3>
-
-<p>
-Print dokumen hitam putih
-dan warna.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">📷</div>
-
-<h3>Scan Dokumen</h3>
-
-<p>
-Scan dokumen menjadi
-file digital.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">📚</div>
-
-<h3>Jilid</h3>
-
-<p>
-Jilid dokumen ukuran A4
-dan F4.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">📑</div>
-
-<h3>Laminating</h3>
-
-<p>
-Laminating dokumen agar
-lebih awet dan terlindungi.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">🖼️</div>
-
-<h3>Cetak Foto</h3>
-
-<p>
-Cetak foto berbagai ukuran
-sesuai kebutuhan.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">🎨</div>
-
-<h3>Cetak Undangan</h3>
-
-<p>
-Cetak undangan berbagai
-acara dan kebutuhan.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">👕</div>
-
-<h3>Sablon Baju</h3>
-
-<p>
-Sablon kaos untuk acara,
-komunitas dan kebutuhan usaha.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">📖</div>
-
-<h3>Cetak Yasin</h3>
-
-<p>
-Cetak buku Yasin untuk
-berbagai keperluan.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">📚</div>
-
-<h3>Cetak Buku</h3>
-
-<p>
-Cetak buku, modul,
-makalah dan kebutuhan lainnya.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">🏷️</div>
-
-<h3>Stiker / Tempel</h3>
-
-<p>
-Cetak stiker untuk produk,
-usaha dan kebutuhan lainnya.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">📢</div>
-
-<h3>Banner & Poster</h3>
-
-<p>
-Kebutuhan promosi usaha,
-acara dan kegiatan.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">✏️</div>
-
-<h3>ATK</h3>
-
-<p>
-Berbagai kebutuhan alat
-tulis kantor dan sekolah.
-</p>
-
-</div>
-
-
-</div>
+  <div class="container">
+
+    <h2 class="section-title">
+      Layanan ALBA COPY CENTER
+    </h2>
+
+    <div class="services">
+
+      <div class="service-card">
+        <div class="icon">📄</div>
+        <h3>Fotokopi</h3>
+        <p>Dokumen hitam putih maupun warna.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🖨️</div>
+        <h3>Print</h3>
+        <p>Print dokumen dan berbagai kebutuhan.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">📑</div>
+        <h3>Scan</h3>
+        <p>Scan dokumen dengan hasil berkualitas.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">📚</div>
+        <h3>Jilid</h3>
+        <p>Jilid berbagai jenis dokumen.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🪪</div>
+        <h3>Laminating</h3>
+        <p>Melindungi dokumen agar lebih awet.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🖼️</div>
+        <h3>Cetak Foto</h3>
+        <p>Cetak foto berbagai ukuran.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">💌</div>
+        <h3>Cetak Undangan</h3>
+        <p>Undangan berbagai acara.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">👕</div>
+        <h3>Sablon Baju</h3>
+        <p>Pesanan sablon sesuai kebutuhan.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">📖</div>
+        <h3>Cetak Yasin</h3>
+        <p>Untuk berbagai kebutuhan acara.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">📕</div>
+        <h3>Cetak Buku</h3>
+        <p>Cetak buku dan dokumen lainnya.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🏷️</div>
+        <h3>Stiker / Tempel</h3>
+        <p>Cetak stiker berbagai kebutuhan.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🪧</div>
+        <h3>Banner & Poster</h3>
+        <p>Media promosi dan informasi.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">✏️</div>
+        <h3>ATK</h3>
+        <p>Berbagai kebutuhan alat tulis kantor.</p>
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
 
-<!-- =========================
-     HARGA
-========================= -->
-
+<!-- HARGA -->
 <section id="harga">
 
-<div class="section-title">
+  <div class="container">
 
-<h2>Daftar Harga</h2>
+    <h2 class="section-title">
+      Daftar Harga
+    </h2>
 
-<p>
-Harga layanan ALBA COPY CENTER.
-</p>
+    <div class="price-box">
 
-</div>
+      <div class="price-row">
+        <span>Fotokopi Hitam Putih</span>
+        <span class="price">Mulai Rp300</span>
+      </div>
 
+      <div class="price-row">
+        <span>Print Dokumen</span>
+        <span class="price">Mulai Rp500</span>
+      </div>
 
-<div class="price-table">
+      <div class="price-row">
+        <span>Scan Dokumen</span>
+        <span class="price">Mulai Rp2.000</span>
+      </div>
 
+      <div class="price-row">
+        <span>Jilid</span>
+        <span class="price">Mulai Rp5.000</span>
+      </div>
 
-<div class="price-row">
-<span>Fotokopi A4 Hitam Putih</span>
-<strong>Rp250 / lembar</strong>
-</div>
+      <div class="price-row">
+        <span>Laminating</span>
+        <span class="price">Mulai Rp5.000</span>
+      </div>
 
+      <div class="price-row">
+        <span>Cetak Foto</span>
+        <span class="price">Hubungi Kami</span>
+      </div>
 
-<div class="price-row">
-<span>Fotokopi A4 Hitam Putih Bolak Balik</span>
-<strong>Rp300 / lembar</strong>
-</div>
+      <div class="price-row">
+        <span>Banner / Poster</span>
+        <span class="price">Hubungi Kami</span>
+      </div>
 
+    </div>
 
-<div class="price-row">
-<span>Print A4 Hitam Putih</span>
-<strong>Rp1.000 / lembar</strong>
-</div>
+    <p style="text-align:center;margin-top:20px;">
+      Harga dapat menyesuaikan ukuran, jumlah dan jenis bahan.
+    </p>
 
-
-<div class="price-row">
-<span>Print A4 Warna</span>
-<strong>Rp2.000 / lembar</strong>
-</div>
-
-
-<div class="price-row">
-<span>Scan Dokumen</span>
-<strong>Rp2.000 / lembar</strong>
-</div>
-
-
-<div class="price-row">
-<span>Laminating A4</span>
-<strong>Rp4.000 / lembar</strong>
-</div>
-
-
-<div class="price-row">
-<span>Laminating A4</span>
-<strong>Rp5.000 / lembar</strong>
-</div>
-
-
-<div class="price-row">
-<span>Jilid A4</span>
-<strong>Rp4.000</strong>
-</div>
-
-
-<div class="price-row">
-<span>Jilid F4</span>
-<strong>Rp5.000</strong>
-</div>
-
-
-<div class="price-row">
-<span>Cetak Foto 2X3 / 3X4 / 4X6 / 2R</span>
-<strong>Rp1.000 / lembar</strong>
-</div>
-
-
-<div class="price-row">
-<span>Cetak Foto 3R</span>
-<strong>Rp3.000</strong>
-</div>
-
-
-<div class="price-row">
-<span>Cetak Foto 4R</span>
-<strong>Rp4.000</strong>
-</div>
-
-
-<div class="price-row">
-<span>Cetak Foto 5R</span>
-<strong>Rp5.000</strong>
-</div>
-
-
-</div>
+  </div>
 
 </section>
 
 
-<!-- =========================
-     PROMO
-========================= -->
+<!-- PROMO -->
+<section class="promo">
 
-<section>
+  <div class="container">
 
-<div class="promo">
+    <div class="promo-box">
 
-<h2>
-🎉 ALBA COPY CENTER
-</h2>
+      <h3>🔥 Promo & Pesanan</h3>
 
-<p>
-Butuh print, fotokopi atau percetakan?
-Pesan dengan mudah melalui WhatsApp.
-</p>
+      <p>
+        Butuh fotokopi, print atau percetakan?
+        Kirim file terlebih dahulu melalui WhatsApp.
+      </p>
 
-<a
-href="https://wa.me/628128183339"
-target="_blank"
-class="btn btn-green">
+      <a
+        class="btn btn-wa"
+        href="https://wa.me/628128183339"
+        target="_blank"
+        rel="noopener">
+        Pesan Sekarang
+      </a>
 
-💬 Tanya Sekarang
+    </div>
 
-</a>
-
-</div>
+  </div>
 
 </section>
 
 
-<!-- =========================
-     PESAN
-========================= -->
-
+<!-- PESAN -->
 <section id="pesan">
 
-<div class="section-title">
+  <div class="container">
 
-<h2>Pesan Layanan</h2>
+    <h2 class="section-title">
+      Formulir Pesanan
+    </h2>
 
-<p>
-Upload file dan kirim detail pesanan Anda.
-</p>
+    <form id="orderForm">
 
-</div>
+      <div class="form-group">
 
+        <label for="nama">
+          Nama
+        </label>
 
-<div class="form-wrapper">
+        <input
+          type="text"
+          id="nama"
+          placeholder="Nama Anda"
+          required>
 
-<form id="orderForm">
+      </div>
 
 
-<div class="form-grid">
+      <div class="form-group">
 
+        <label for="nomor">
+          Nomor WhatsApp
+        </label>
 
-<div class="form-group">
+        <input
+          type="tel"
+          id="nomor"
+          placeholder="08xxxxxxxxxx"
+          required>
 
-<label>
-Nama *
-</label>
+      </div>
 
-<input
-type="text"
-id="nama"
-placeholder="Nama Anda"
-required>
 
-</div>
+      <div class="form-group">
 
+        <label>
+          Pilih Layanan
+        </label>
 
-<div class="form-group">
+        <div class="checkbox-grid">
 
-<label>
-Nomor WhatsApp *
-</label>
+          <label class="checkbox-item">
+            <input type="checkbox" value="Fotokopi">
+            Fotokopi
+          </label>
 
-<input
-type="tel"
-id="nomor"
-placeholder="08xxxxxxxxxx"
-required>
+          <label class="checkbox-item">
+            <input type="checkbox" value="Print">
+            Print
+          </label>
 
-</div>
+          <label class="checkbox-item">
+            <input type="checkbox" value="Scan">
+            Scan
+          </label>
 
+          <label class="checkbox-item">
+            <input type="checkbox" value="Jilid">
+            Jilid
+          </label>
 
-</div>
+          <label class="checkbox-item">
+            <input type="checkbox" value="Laminating">
+            Laminating
+          </label>
 
+          <label class="checkbox-item">
+            <input type="checkbox" value="Cetak Foto">
+            Cetak Foto
+          </label>
 
-<div class="form-group">
+          <label class="checkbox-item">
+            <input type="checkbox" value="Cetak Undangan">
+            Cetak Undangan
+          </label>
 
-<label>
-Pilih Layanan *
-</label>
+          <label class="checkbox-item">
+            <input type="checkbox" value="Sablon Baju">
+            Sablon Baju
+          </label>
 
+          <label class="checkbox-item">
+            <input type="checkbox" value="Banner / Poster">
+            Banner / Poster
+          </label>
 
-<div class="checkbox-grid">
+          <label class="checkbox-item">
+            <input type="checkbox" value="ATK">
+            ATK
+          </label>
 
+        </div>
 
-<label class="checkbox">
-<input type="checkbox" value="Fotokopi">
-Fotokopi
-</label>
+      </div>
 
 
-<label class="checkbox">
-<input type="checkbox" value="Print">
-Print
-</label>
+      <div class="form-group">
 
+        <label for="jumlah">
+          Jumlah
+        </label>
 
-<label class="checkbox">
-<input type="checkbox" value="Scan">
-Scan
-</label>
+        <input
+          type="number"
+          id="jumlah"
+          min="1"
+          value="1">
 
+      </div>
 
-<label class="checkbox">
-<input type="checkbox" value="Jilid">
-Jilid
-</label>
 
+      <div class="form-group">
 
-<label class="checkbox">
-<input type="checkbox" value="Laminating">
-Laminating
-</label>
+        <label for="file">
+          Upload File
+        </label>
 
+        <input
+          type="file"
+          id="file"
+          accept=".jpg,.jpeg,.png,.webp,.pdf,.doc,.docx,.xls,.xlsx,.cdr">
 
-<label class="checkbox">
-<input type="checkbox" value="Cetak Foto">
-Cetak Foto
-</label>
+        <div class="upload-info">
+          Format: JPG, PNG, WEBP, PDF, Word, Excel atau CorelDRAW.
+        </div>
 
+      </div>
 
-<label class="checkbox">
-<input type="checkbox" value="Undangan">
-Undangan
-</label>
 
+      <div class="form-group">
 
-<label class="checkbox">
-<input type="checkbox" value="Sablon Baju">
-Sablon Baju
-</label>
+        <label for="catatan">
+          Catatan
+        </label>
 
+        <textarea
+          id="catatan"
+          placeholder="Tulis ukuran, warna, jumlah halaman atau permintaan lainnya..."></textarea>
 
-<label class="checkbox">
-<input type="checkbox" value="Cetak Yasin">
-Cetak Yasin
-</label>
+      </div>
 
 
-<label class="checkbox">
-<input type="checkbox" value="Cetak Buku">
-Cetak Buku
-</label>
+      <div class="form-group">
 
+        <label for="ambil">
+          Pengambilan
+        </label>
 
-<label class="checkbox">
-<input type="checkbox" value="Stiker / Tempel">
-Stiker / Tempel
-</label>
+        <select id="ambil">
 
+          <option value="Ambil di toko">
+            Ambil di toko
+          </option>
 
-<label class="checkbox">
-<input type="checkbox" value="Banner / Poster">
-Banner / Poster
-</label>
+          <option value="Tanya admin">
+            Tanya admin
+          </option>
 
+        </select>
 
-<label class="checkbox">
-<input type="checkbox" value="ATK">
-ATK
-</label>
+      </div>
 
 
-</div>
+      <button
+        type="submit"
+        class="btn btn-wa"
+        style="border:0;cursor:pointer;width:100%;font-size:16px;">
 
-</div>
+        💬 Kirim Pesanan ke WhatsApp
 
+      </button>
 
-<div class="form-group">
+    </form>
 
-<label>
-Jumlah / Kebutuhan
-</label>
-
-<input
-type="text"
-id="jumlah"
-placeholder="Contoh: Print 20 lembar">
-
-</div>
-
-
-<!-- =========================
-     UPLOAD FILE
-========================= -->
-
-<div class="form-group">
-
-<label>
-📎 Upload File
-</label>
-
-
-<div class="file-box">
-
-<strong>
-Pilih file yang akan dicetak
-</strong>
-
-<p>
-JPG, PNG, PDF, Word, Excel atau CorelDRAW
-</p>
-
-
-<input
-type="file"
-id="dokumen"
-multiple
-
-accept="
-.image/jpeg,
-.image/jpg,
-.image/png,
-.image/webp,
-.application/pdf,
-.application/msword,
-.application/vnd.openxmlformats-officedocument.wordprocessingml.document,
-.application/vnd.ms-excel,
-.application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,
-.application/octet-stream,
-.cdr,
-.doc,
-.docx,
-.xls,
-.xlsx,
-.pdf,
-.jpg,
-.jpeg,
-.png,
-.webp
-">
-
-
-<div
-class="file-info"
-id="fileInfo">
-
-Belum ada file dipilih.
-
-</div>
-
-
-<button
-type="button"
-class="share-file"
-id="shareButton">
-
-📤 BAGIKAN FILE
-
-</button>
-
-</div>
-
-</div>
-
-
-<div class="form-group">
-
-<label>
-Catatan Pesanan
-</label>
-
-<textarea
-id="catatan"
-placeholder="Tulis ukuran, jumlah, warna, jenis kertas, dan detail lainnya..."></textarea>
-
-</div>
-
-
-<div class="form-group">
-
-<label>
-Metode Pengambilan
-</label>
-
-<select id="pengambilan">
-
-<option>
-Ambil di toko
-</option>
-
-<option>
-Diantar
-</option>
-
-</select>
-
-</div>
-
-
-<button
-type="submit"
-class="submit">
-
-📲 KIRIM PESAN KE WHATSAPP
-
-</button>
-
-
-</form>
-
-</div>
+  </div>
 
 </section>
 
 
-<!-- =========================
-     ULASAN
-========================= -->
-
+<!-- ULASAN -->
 <section id="ulasan">
 
-<div class="section-title">
+  <div class="container">
 
-<h2>Ulasan Pelanggan</h2>
+    <h2 class="section-title">
+      Ulasan Pelanggan
+    </h2>
 
-<p>
-Pengalaman pelanggan ALBA COPY CENTER.
-</p>
+    <div class="reviews">
 
-</div>
+      <div class="review">
 
+        <div class="stars">
+          ★★★★★
+        </div>
 
-<div class="testimonials">
+        <p>
+          Pelayanan cepat dan hasil print bagus.
+        </p>
 
-
-<div class="testimonial">
-
-<div class="stars">
-★★★★★
-</div>
-
-<p>
-"Pelayanannya cepat dan hasil print-nya rapi."
-</p>
-
-<br>
-
-<strong>
-Pelanggan ALBA
-</strong>
-
-</div>
+      </div>
 
 
-<div class="testimonial">
+      <div class="review">
 
-<div class="stars">
-★★★★★
-</div>
+        <div class="stars">
+          ★★★★★
+        </div>
 
-<p>
-"Harga bersahabat dan proses pemesanan mudah."
-</p>
+        <p>
+          Bisa pesan lewat WhatsApp, sangat praktis.
+        </p>
 
-<br>
-
-<strong>
-Pelanggan ALBA
-</strong>
-
-</div>
+      </div>
 
 
-<div class="testimonial">
+      <div class="review">
 
-<div class="stars">
-★★★★★
-</div>
+        <div class="stars">
+          ★★★★★
+        </div>
 
-<p>
-"Tempatnya lengkap untuk kebutuhan dokumen."
-</p>
+        <p>
+          Banyak kebutuhan percetakan yang tersedia.
+        </p>
 
-<br>
+      </div>
 
-<strong>
-Pelanggan ALBA
-</strong>
+    </div>
 
-</div>
-
-
-</div>
+  </div>
 
 </section>
 
 
-<!-- =========================
-     KONTAK
-========================= -->
-
+<!-- KONTAK -->
 <section id="kontak">
 
-<div class="contact">
+  <div class="container">
 
-<h2>
-Hubungi ALBA COPY CENTER
-</h2>
+    <h2 class="section-title">
+      Kontak & Lokasi
+    </h2>
 
+    <div class="contact-box">
 
-<div class="address">
+      <h3>
+        ALBA COPY CENTER
+      </h3>
 
-📍 <strong>Alamat:</strong><br>
+      <p>
+        👤 Pemilik: Dedi Asari / Acong
+      </p>
 
-Perum GCC Cluster Lanatana
-Jl. Nakula Raya Blok C1 No. 4
+      <p>
+        📍 Perum GCC Cluster Lanatana
+        Jl. Nakula Raya Blok C1 No. 4
+      </p>
 
-<br><br>
+      <p>
+        🕕 Buka setiap hari: 06.00 – 22.00 WIB
+      </p>
 
-🕐 <strong>Jam Operasional:</strong><br>
+      <p>
+        📱 WhatsApp:
+        0812-8183-339
+      </p>
 
-06:00 – 22:00 WIB
+      <a
+        class="btn btn-wa"
+        href="https://wa.me/628128183339"
+        target="_blank"
+        rel="noopener">
 
-<br>
+        WhatsApp
 
-Buka setiap hari,
-termasuk hari libur.
+      </a>
 
-</div>
+      <a
+        class="btn btn-map"
+        href="https://maps.app.goo.gl/wYgBURe3gChmRh7Q6?g_st=ac"
+        target="_blank"
+        rel="noopener">
 
+        Google Maps
 
-<div class="buttons">
+      </a>
 
-<a
-href="https://wa.me/628128183339"
-target="_blank"
-class="btn btn-green">
+    </div>
 
-💬 WhatsApp ALBA
-
-</a>
-
-
-<a
-href="https://maps.app.goo.gl/wYgBURe3gChmRh7Q6?g_st=ac"
-target="_blank"
-class="btn btn-primary">
-
-📍 Buka Google Maps
-
-</a>
-
-</div>
-
-</div>
+  </div>
 
 </section>
 
-
-<!-- =========================
-     FOOTER
-========================= -->
 
 <footer>
 
-<p>
-© 2026 <strong>ALBA COPY CENTER</strong>
-</p>
+  <p>
+    © <span id="year"></span>
+    ALBA COPY CENTER.
+    Semua Hak Dilindungi.
+  </p>
 
-<p>
-Cepat Melayani, Rapi Hasilnya.
-</p>
-
-<p>
-Pemilik: Dedi Asari / Acong
-</p>
-
-<p>
-Website by Abdul R Official
-</p>
+  <p>
+    Website by
+    <strong>Abdul R Official</strong>
+  </p>
 
 </footer>
 
 
-<!-- =========================
-     FLOATING WA
-========================= -->
+<!-- FLOATING WHATSAPP -->
 
 <a
-href="https://wa.me/628128183339"
-target="_blank"
-class="wa-floating"
-aria-label="WhatsApp">
+  class="wa-floating"
+  href="https://wa.me/628128183339"
+  target="_blank"
+  rel="noopener"
+  aria-label="Chat WhatsApp ALBA COPY CENTER">
 
-💬
+  💬
 
 </a>
 
 
 <script>
 
-/* =================================
-   UPLOAD FILE
-================================= */
+  // Tahun otomatis
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
 
-const fileInput =
-document.getElementById("dokumen");
 
-const fileInfo =
-document.getElementById("fileInfo");
+  // Form Pesanan
+  document.getElementById("orderForm")
+    .addEventListener("submit", function(event) {
 
+      event.preventDefault();
 
-let selectedFiles = [];
+      const nama =
+        document.getElementById("nama").value.trim();
 
+      const nomor =
+        document.getElementById("nomor").value.trim();
 
-fileInput.addEventListener(
-"change",
-function(){
+      const jumlah =
+        document.getElementById("jumlah").value;
 
-selectedFiles =
-Array.from(this.files);
+      const catatan =
+        document.getElementById("catatan").value.trim();
 
-if(selectedFiles.length === 0){
+      const ambil =
+        document.getElementById("ambil").value;
 
-fileInfo.innerHTML =
-"Belum ada file dipilih.";
+      const fileInput =
+        document.getElementById("file");
 
-return;
+      const layanan =
+        Array.from(
+          document.querySelectorAll(
+            'input[type="checkbox"]:checked'
+          )
+        )
+        .map(function(item) {
+          return item.value;
+        });
 
-}
+      if (layanan.length === 0) {
 
+        alert(
+          "Silakan pilih minimal satu layanan."
+        );
 
-let html =
-"<strong>File dipilih:</strong><ul class='file-list'>";
+        return;
+      }
 
 
-selectedFiles.forEach(
-function(file){
+      let fileName = "Tidak ada";
 
-const ukuran =
-(file.size / 1024 / 1024)
-.toFixed(2);
+      if (fileInput.files.length > 0) {
 
-html +=
-"<li>📎 " +
-file.name +
-" (" +
-ukuran +
-" MB)</li>";
+        fileName =
+          fileInput.files[0].name;
 
-});
+      }
 
 
-html += "</ul>";
+      const pesan =
+`Halo ALBA COPY CENTER 👋
 
-fileInfo.innerHTML = html;
+Saya ingin melakukan pemesanan.
 
-});
+Nama:
+${nama}
 
+Nomor WhatsApp:
+${nomor}
 
-/* =================================
-   SHARE FILE
-================================= */
+Layanan:
+${layanan.join(", ")}
 
-document
-.getElementById("shareButton")
-.addEventListener(
-"click",
-async function(){
+Jumlah:
+${jumlah}
 
-if(selectedFiles.length === 0){
+File:
+${fileName}
 
-alert(
-"Silakan pilih file terlebih dahulu."
-);
+Catatan:
+${catatan || "-"}
 
-return;
+Pengambilan:
+${ambil}
 
-}
+Mohon informasi harga dan prosesnya. Terima kasih.`;
 
 
-/*
-   Browser Android tertentu
-   mendukung Web Share API
-   untuk berbagi file.
-*/
+      const whatsappURL =
+        "https://wa.me/628128183339?text=" +
+        encodeURIComponent(pesan);
 
-if(
-navigator.share &&
-navigator.canShare
-){
 
-try{
+      window.open(
+        whatsappURL,
+        "_blank"
+      );
 
-const shareData = {
-files:selectedFiles,
-title:"Pesanan ALBA COPY CENTER",
-text:"File pesanan untuk ALBA COPY CENTER"
-};
-
-
-if(
-navigator.canShare(shareData)
-){
-
-await navigator.share(shareData);
-
-return;
-
-}
-
-}catch(error){
-
-console.log(
-"Share dibatalkan:",
-error
-);
-
-}
-
-}
-
-
-/*
-   Jika browser tidak mendukung
-   berbagi file, buka WhatsApp.
-*/
-
-const pesan =
-"📎 Saya sudah memilih " +
-selectedFiles.length +
-" file untuk pesanan ALBA COPY CENTER.\n\n" +
-"Silakan saya kirim file ini melalui WhatsApp.";
-
-const url =
-"https://wa.me/628128183339?text=" +
-encodeURIComponent(pesan);
-
-window.open(
-url,
-"_blank"
-);
-
-});
-
-
-/* =================================
-   FORM WHATSAPP
-================================= */
-
-document
-.getElementById("orderForm")
-.addEventListener(
-"submit",
-function(e){
-
-e.preventDefault();
-
-
-const nama =
-document.getElementById("nama").value;
-
-const nomor =
-document.getElementById("nomor").value;
-
-const jumlah =
-document.getElementById("jumlah").value;
-
-const catatan =
-document.getElementById("catatan").value;
-
-const pengambilan =
-document.getElementById("pengambilan").value;
-
-
-/* LAYANAN */
-
-const layanan =
-Array.from(
-document.querySelectorAll(
-".checkbox-grid input:checked"
-)
-).map(
-item => item.value
-);
-
-
-if(layanan.length === 0){
-
-alert(
-"Silakan pilih minimal satu layanan."
-);
-
-return;
-
-}
-
-
-/* FILE */
-
-const jumlahFile =
-selectedFiles.length;
-
-
-const namaFile =
-selectedFiles.length
-
-?
-
-selectedFiles
-.map(file => file.name)
-.join(", ")
-
-:
-
-"Belum ada file";
-
-
-/* PESAN */
-
-const pesan =
-
-"🖨️ *PESANAN ALBA COPY CENTER*\n\n" +
-
-"━━━━━━━━━━━━━━━━━━\n" +
-
-"👤 *DATA PELANGGAN*\n\n" +
-
-"Nama: " +
-nama +
-"\n" +
-
-"WhatsApp: " +
-nomor +
-"\n\n" +
-
-"━━━━━━━━━━━━━━━━━━\n" +
-
-"📄 *LAYANAN*\n\n" +
-
-layanan
-.map(
-item => "✅ " + item
-)
-.join("\n") +
-
-"\n\n" +
-
-"━━━━━━━━━━━━━━━━━━\n" +
-
-"📦 *DETAIL PESANAN*\n\n" +
-
-"Jumlah / kebutuhan: " +
-(jumlah || "-") +
-"\n\n" +
-
-"Metode pengambilan: " +
-pengambilan +
-"\n\n" +
-
-"Jumlah file: " +
-jumlahFile +
-"\n\n" +
-
-"Nama file:\n" +
-namaFile +
-
-"\n\n" +
-
-"━━━━━━━━━━━━━━━━━━\n" +
-
-"📝 *CATATAN*\n\n" +
-
-(catatan || "-") +
-
-"\n\n" +
-
-"━━━━━━━━━━━━━━━━━━\n\n" +
-
-"Halo ALBA COPY CENTER,\n" +
-
-"saya ingin memesan layanan.\n\n" +
-
-"Mohon informasi harga dan proses selanjutnya.\n\n" +
-
-"Terima kasih 🙏";
-
-
-/* BUKA WHATSAPP */
-
-const whatsapp =
-"https://wa.me/628128183339" +
-
-"?text=" +
-
-encodeURIComponent(pesan);
-
-
-window.open(
-whatsapp,
-"_blank"
-);
-
-});
+    });
 
 </script>
 
